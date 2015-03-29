@@ -170,7 +170,7 @@ def pytkgui():
     infodata.place(x=10,y=255)
     root.mainloop()
 def usemysql(ID):
-    sconn = mysql.connector.connect(host='localhost', user='root',passwd='yuyouwen',db='jsf')
+    sconn = mysql.connector.connect(host='localhost', user='root',passwd='password',db='jsf')
     cursor =sconn.cursor()
     query="SELECT * FROM userinfo where cardID =%s"
     infodata=(ID,)
